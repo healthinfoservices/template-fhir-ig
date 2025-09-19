@@ -1,0 +1,7 @@
+{
+  "version" : "0.0.1",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20250919075212",
+  "name" : "fhir.efiq.connectathon.ig",
+  "jurisdiction" : "urn:iso:std:iso:3166#AUS"
+}
