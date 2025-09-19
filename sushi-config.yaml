@@ -3,26 +3,26 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.arfregister
-canonical: http://fhir-arf-register.nardhc.org
-name: ARFRegisterIG
-title: Implementation Guide for ARF/RHD Register - AU
-description: FHIR Implementation Guide for Acute Rheumatic Fever/Rheumatic Heart Disease Register - Australian version
+id: fhir.efiq.connectathon.ig
+canonical: http://healthinfoservices.site/fhir/efiq-connectathon-ig
+name: EFIQConnectathonIG
+title: Template Implementation Guide - AU
+description: Template FHIR Implementation Guide for EFIQ Connectathon
 status: draft # draft | active | retired | unknown
-version: 0.2.0
+version: 0.0.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
 #  hl7.fhir.au.core: 0.3.0-ballot
-  hl7.fhir.au.core: 1.0.0-ballot
-  hl7.fhir.au.base: 4.1.0
+  hl7.fhir.au.core: 1.0.0
+  hl7.fhir.au.base: 5.0.0
 #  hl7.fhir.au.core: 0.1.0-draft  
-copyrightYear: 2024+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+copyrightYear: 2025
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: Apache-2.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#AUS "Australia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Northern Australian Regional Digital Health Collaborative
-  url: https://nardhc.org
+  name: EFIQ Connectathon
+  url: https://healthinfoservices.site
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
