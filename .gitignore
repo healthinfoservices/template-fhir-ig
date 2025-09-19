@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Generated FSH JSON
+fsh-generated/
+# Generated IG output
+output/
+# IG Publisher JAR (we download/cache in workflow)
+publisher.jar
+# Temporary files
+*.log
+*.tmp
+
+# OS/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+README.output
+/input-cache
+/temp
+/template
