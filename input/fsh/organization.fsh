@@ -1,7 +1,7 @@
-// Practioner Providing Care for ARF Patient
+// Organization providing care for patients in this IG scope
 Profile: ARFOrganisation
 Parent: $au-organization
-Description: "Profile of Organization Providing Care for ARF Patient."
+Description: "Template Profile for Healthcare Organization"
 * identifier[hpio] 1..1 MS
 * name 1..1 MS
 * telecom 1..* MS
