@@ -1,14 +1,14 @@
 // Organization Example
 Instance: VeryRemoteClinic
-InstanceOf: ARFOrganisation
-Description: "An example of a clinic providing health services to ARF patient."
+InstanceOf: HIOrganisation
+Description: "An example of a clinic providing health services for template Patient."
 * name = "Very Remote Health Clinic"
 * telecom.system = #phone
 * telecom.value = "+61 7 12345678"
 * identifier.use = #official
 * identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #NOI
-* identifier.system = $id-hpio-system
+* identifier.system = $au-hpio-sys
 * identifier.value = "8003621566684455"
 * address.line = "2342 Main Road"
 * address.city = "Coen"
@@ -17,12 +17,12 @@ Description: "An example of a clinic providing health services to ARF patient."
 
 // Practitioner example
 Instance: DoctorPayne
-InstanceOf: ARFPractitioner
-Description: "Example of Practioner Providing Care for ARF Patient"
+InstanceOf: HIPractitioner
+Description: "Example of Practioner Providing Care for template Patient"
 * identifier.use = #official
 * identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NPI
-* identifier.system = $id-hpii-system
+* identifier.system = $au-hpii-sys
 * identifier.value = "8003619900015717"
 * name
   * given[0] = "Jane"
@@ -34,12 +34,12 @@ Description: "Example of Practioner Providing Care for ARF Patient"
 
 // Practitioner Role example
 Instance: DoctorPayneRole1
-InstanceOf: ARFPractitionerRole
-Description: "Example of Practioner Providing Care for ARF Patient"
+InstanceOf: HIPractitionerRole
+Description: "Example of Practioner Providing Care for template Patient"
 * identifier.use = #official
 * identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #UPIN
-* identifier.system = $id-medicare-provider-system
+* identifier.system = $au-medicare-provider-sys
 * identifier.value = "2426621B"
 * practitioner = Reference(DoctorPayne)
 * organization = Reference(VeryRemoteClinic)
@@ -48,12 +48,12 @@ Description: "Example of Practioner Providing Care for ARF Patient"
 
 // Patient Example
 Instance: MikePondPatient
-InstanceOf: ARFPatient
-Description: "An example of a patient recorded in ARF register."
+InstanceOf: HIPatient
+Description: "An example of a patient recorded for template Patient."
 * identifier.use = #official
 * identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NI
-* identifier.system = $id-ihi-system
+* identifier.system = $au-ihi-sys
 * identifier.value = "8003608833357361"
 * name
   * given[0] = "Mike"
@@ -70,10 +70,9 @@ Description: "An example of a patient recorded in ARF register."
 
 // Condition example
 Instance: MikePondCondition
-InstanceOf: ARFCondition
-Description: "Example of ARF Condition for Patient."
-* identifier.system = $ARF-register-system
-* identifier.value = "ARF1000123"
+InstanceOf: HICondition
+Description: "Example of template Patient."
+* identifier.value = "HI1000123"
 * code.coding.system = $SCT
 * code.coding.code = #195528001
 * code.coding.display = "Acute rheumatic fever" 
@@ -91,8 +90,8 @@ Description: "Example of ARF Condition for Patient."
 
 // Allergy example
 Instance: MikePondMedicationAllergy
-InstanceOf: ARFAllergy
-Description: "Example of Medication Allergy for ARF Patient."
+InstanceOf: HIAllergy
+Description: "Example of Medication Allergy for template Patient."
 * code.coding = $SCT#293779007 "Carboplatin allergy" 
 // * code.coding.version = "20240201"
 * code.text =  "Carboplatin"
@@ -111,7 +110,7 @@ Description: "Example of Medication Allergy for ARF Patient."
 
 // Prescribed medication example
 Instance: BicillinMedicationRequest
-InstanceOf: ARFMedicationRequest
+InstanceOf: HIMedicationRequest
 Description: "Example of Medication Request (prescription) of Bicillin"
 * identifier.type.coding.system = "http://terminology.hl7.org.au/CodeSystem/v2-0203"
 * identifier.type.coding.code = #LPN
@@ -124,7 +123,7 @@ Description: "Example of Medication Request (prescription) of Bicillin"
 * subject = Reference(MikePondPatient)
 * authoredOn = "2023-10-01"
 * requester = Reference(DoctorPayneRole1)
-* reasonCode.text = "Secondary prophylaxis for ARF/RHD"
+* reasonCode.text = "Secondary prophylaxis for HI/RHD"
 * dosageInstruction.text = "Bicillin injection every 28 days"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
@@ -139,7 +138,7 @@ Description: "Example of Medication Request (prescription) of Bicillin"
 
 // Administered medication example
 Instance: BicillinMedicationStatement
-InstanceOf: ARFMedicationStatement
+InstanceOf: HIMedicationStatement
 Description: "Example of Medication statement of administered dose of Bicillin"
 * status = #completed
 * basedOn = Reference(BicillinMedicationRequest)
@@ -162,11 +161,11 @@ Description: "Example of Medication statement of administered dose of Bicillin"
 
 // Example Careplan for patient with RHD
 Instance: MikePondCarePlan
-InstanceOf: ARFCarePlan
-Description: "Example of care plan for patient with ARF"
+InstanceOf: HICarePlan
+Description: "Example of care plan for template patient"
 * identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #LR
-* identifier.system = "http://arfregister.example.au/id/registerid/localsystem"
+* identifier.system = "http://HIregister.example.au/id/registerid/localsystem"
 * identifier.value = "987654321"
 * title = "Rheumatic fever care plan for patient Mike Pond"
 * status = #active

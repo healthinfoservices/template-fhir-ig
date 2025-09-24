@@ -1,16 +1,16 @@
-// Practioner Providing Care for ARF Patient
-Profile: ARFPractitioner
+// Practioner Providing Care for template Patient
+Profile: HIPractitioner
 Parent: $au-practitioner
-Description: "Profile of Practioner Providing Care for ARF Patient."
+Description: "Profile of Practioner Providing Care for template Patient."
 * identifier 1..1 MS
 
 
 
-// Practitioner Role of Practitioner Providing Care for ARF Patient
-Profile: ARFPractitionerRole
+// Practitioner Role of Practitioner Providing Care for template Patient
+Profile: HIPractitionerRole
 Parent: $au-practitionerrole
-Description: "Profile of Practioner Role Providing Care for ARF Patient."
+Description: "Profile of Practioner Role Providing Care for template Patient."
 // * identifier only $au-medicareprovidernumber or $au-nationalprovideridentifieratorganisation
 * identifier[medicareProvider] 1..1 MS
-* practitioner only Reference(ARFPractitioner)
-* organization only Reference(ARFOrganisation)
+* practitioner only Reference(HIPractitioner)
+* organization only Reference(HIOrganisation)

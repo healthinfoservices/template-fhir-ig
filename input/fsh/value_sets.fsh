@@ -1,5 +1,5 @@
-ValueSet: ARFDiagnosisCodeVS
-Id: arf-diagnosis-vs
+ValueSet: HIDiagnosisCodeVS
+Id: hi-diagnosis-vs
 Title: "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions"
 Description: "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions"
 * ^experimental = true
@@ -8,8 +8,8 @@ Description: "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions"
 * $SCT#302471000210100 "Rheumatic heart disease with absence of signs and symptoms of acute rheumatic fever"
 * $SCT#299171000210109 "History of acute rheumatic fever without heart disease"
 
-ValueSet: ARFSeverityVS
-Id: arf-severity-vs
+ValueSet: HISeverityVS
+Id: hi-severity-vs
 Title: "Acute Rheumatic Fever Condition Severity"
 Description: "Acute Rheumatic Fever Condition Severity"
 * ^experimental = true
@@ -19,8 +19,8 @@ Description: "Acute Rheumatic Fever Condition Severity"
 * $SCT#24484000 "Severe"
 * $SCT#261665006 "Unknown"
 
-ValueSet: ARFMedicationCodeVS
-Id: arf-medication-code-vs
+ValueSet: HIMedicationCodeVS
+Id: hi-medication-code-vs
 Title: "Medication Codes for Acute Rheumatic Fever"
 Description: "Medication Codes for Acute Rheumatic Fever"
 * ^experimental = true

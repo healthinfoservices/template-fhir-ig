@@ -1,5 +1,5 @@
 // Organization providing care for patients in this IG scope
-Profile: ARFOrganisation
+Profile: HIOrganisation
 Parent: $au-organization
 Description: "Template Profile for Healthcare Organization"
 * identifier[hpio] 1..1 MS

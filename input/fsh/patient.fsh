@@ -1,12 +1,7 @@
-// Patient registered with ARF/RHD
-// identifier - require AUIHI or AUMedicareCardNumber or AUDVANumber with optional other identifiers
-// name - check same constraints as for AU Core
-// address - ?? should this be required ??
-// deceased[x] - ?? should this be deceasedBoolean ??
-// genderIdentity and individualPronouns as agreed for AU Core
-Profile: ARFPatient
+// Template Patient 
+Profile: HIPatient
 Parent: $au-patient
-Description: "Profile of Patient with ARF."
+Description: "Profile of template Patient."
 * identifier[ihi] 1..1 MS
 * identifier[medicare] 0..1 MS
 * identifier[dva] 0..1 MS
