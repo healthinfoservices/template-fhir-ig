@@ -2,7 +2,7 @@
 <div align="center">
   <a href="https://au-ig-template.healthinfoservices.site"><img src="docimg/logo extended.png" alt="Health Info Services Logo"></a>
   <h2>Implementation Guide Template</h2>
-  <h4>Code Package for Australian Context</h4>
+  <h4>FSH Code Package for Australian Context</h4>
 </div>
 
 
