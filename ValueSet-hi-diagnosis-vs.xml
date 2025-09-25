@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hi-diagnosis-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet hi-diagnosis-vs</b></p><a name="hi-diagnosis-vs"> </a><a name="hchi-diagnosis-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/195528001">195528001</a></td><td>Acute rheumatic fever</td></tr><tr><td><a href="http://snomed.info/id/38933006">38933006</a></td><td>Recurrent rheumatic fever</td></tr><tr><td><a href="http://snomed.info/id/302471000210100">302471000210100</a></td><td>Rheumatic heart disease with absence of signs and symptoms of acute rheumatic fever</td></tr><tr><td><a href="http://snomed.info/id/299171000210109">299171000210109</a></td><td>History of acute rheumatic fever without heart disease</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-diagnosis-vs"/>
+  <version value="0.0.2"/>
+  <name value="HIDiagnosisCodeVS"/>
+  <title value="Acute Rheumatic Fever and Rheumatic Heart Disease Conditions"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-25T04:55:19+00:00"/>
+  <description value="Acute Rheumatic Fever and Rheumatic Heart Disease Conditions"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AUS"/>
+      <display value="Australia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="195528001"/>
+        <display value="Acute rheumatic fever"/>
+      </concept>
+      <concept>
+        <code value="38933006"/>
+        <display value="Recurrent rheumatic fever"/>
+      </concept>
+      <concept>
+        <code value="302471000210100"/>
+        <display value="Rheumatic heart disease with absence of signs and symptoms of acute rheumatic fever"/>
+      </concept>
+      <concept>
+        <code value="299171000210109"/>
+        <display value="History of acute rheumatic fever without heart disease"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

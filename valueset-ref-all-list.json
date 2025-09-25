@@ -1,0 +1,883 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitioner.html" : "HIPractitioner",
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitionerRole.html" : "HIPractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HICondition.html" : "HICondition",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest",
+      "StructureDefinition-HIPractitioner.html" : "HIPractitioner",
+      "StructureDefinition-HICarePlan.html" : "HICarePlan",
+      "StructureDefinition-HIOrganisation.html" : "HIOrganisation",
+      "StructureDefinition-HIPractitionerRole.html" : "HIPractitionerRole",
+      "StructureDefinition-HIAllergy.html" : "HIAllergy",
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest",
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-statement-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.370"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.367"],
+      "sources" : ["2.16.840.1.113883.4.642.3.367"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitioner.html" : "HIPractitioner",
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTDrugTherapyStatusCodes",
+      "title" : "SNOMED CT Drug Therapy Status codes ",
+      "description" : "This value set includes some taken and not taken reason codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.369"],
+      "sources" : ["2.16.840.1.113883.4.642.3.369"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-HICarePlan.html" : "HICarePlan"
+    },
+    {
+      "url" : "http://terminology.hl7.org.au/ValueSet/contact-purpose",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ContactPurpose",
+      "title" : "Contact Purpose",
+      "description" : "The purpose for which an associated contact can be reached.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/contactentity-type",
+        "http://terminology.hl7.org.au/CodeSystem/contact-purpose"
+      ],
+      "oids" : ["2.16.840.1.113883.2.3.4.2.4.19"],
+      "sources" : ["2.16.840.1.113883.2.3.4.2.4.19"],
+      "uses" : {
+      },
+      "StructureDefinition-HIOrganisation.html" : "HIOrganisation"
+    },
+    {
+      "url" : "http://terminology.hl7.org.au/ValueSet/mims",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MIMS",
+      "title" : "MIMS",
+      "description" : "The MIMS value set includes all values from the Monthly Index of Medical Specialties (MIMS) published by MIMS Australia. Further details can be found at https://www.mims.com.au/.",
+      "systems" : ["http://www.mims.com.au/codes"],
+      "oids" : ["2.16.840.1.113883.2.3.4.2.4.7"],
+      "sources" : ["2.16.840.1.113883.2.3.4.2.4.7"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org.au/ValueSet/pbs-item",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PBSItemCodes",
+      "title" : "PBS Item Codes",
+      "description" : "The PBS Item Codes value set includes all values from Australian Pharmaceutical Benefits Scheme (PBS) schedule published by the Department of Health. Further details can be found at https://www.pbs.gov.au/pbs/.",
+      "systems" : ["http://pbs.gov.au/code/item"],
+      "oids" : ["2.16.840.1.113883.2.3.4.2.4.8"],
+      "sources" : ["2.16.840.1.113883.2.3.4.2.4.8"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org.au/ValueSet/v2-0360-extended",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "Hl7VSDegreeLicenseCertificateAUExtended",
+      "title" : "hl7VS-degreeLicenseCertificate - AU Extended",
+      "description" : "hl7VS-degreeLicenseCertificate extended for use in an Australian context. Includes HL7 international codes plus Australian additions to create a complete set.",
+      "systems" : [
+        "http://terminology.hl7.org.au/CodeSystem/v2-0360",
+        "http://terminology.hl7.org/CodeSystem/v2-0360"
+      ],
+      "oids" : ["2.16.840.1.113883.2.3.4.2.3.360"],
+      "sources" : ["2.16.840.1.113883.2.3.4.2.3.360"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitioner.html" : "HIPractitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-GTIN",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "GTIN",
+      "title" : "GTIN",
+      "description" : "**Description:**Global Trade Item Number is an identifier for trade items developed by GS1 (comprising the former EAN International and Uniform Code Council).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.19885"],
+      "sources" : ["2.16.840.1.113883.1.11.19885"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-diagnosis-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HIDiagnosisCodeVS",
+      "title" : "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions",
+      "description" : "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-medication-code-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HIMedicationCodeVS",
+      "title" : "Medication Codes for Acute Rheumatic Fever",
+      "description" : "Medication Codes for Acute Rheumatic Fever",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-severity-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HISeverityVS",
+      "title" : "Acute Rheumatic Fever Condition Severity",
+      "description" : "Acute Rheumatic Fever Condition Severity",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "AdverseReactionAgent",
+      "title" : "Adverse Reaction Agent",
+      "description" : "The Adverse Reaction Agent value set includes values that support the recording of agents that may be responsible for causing adverse reactions. It is a broad set encompassing medicinal and non-medicinal agents.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10036"],
+      "sources" : ["1.2.36.1.2001.1004.201.10036"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-substances-and-negated-findings-1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AdverseReactionSubstancesandNegatedFindings",
+      "title" : "Adverse Reaction Substances and Negated Findings",
+      "description" : "The Adverse Reaction Substances and Negated Findings value set comprises terms used to identify a predisposition to adverse reactions to substances, as well as negated findings.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10286"],
+      "sources" : ["1.2.36.1.2001.1004.201.10286"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1",
+      "version" : "1.0.2",
+      "status" : "active",
+      "name" : "AustralianMedication",
+      "title" : "Australian Medication",
+      "description" : "The Australian Medication value set includes all Australian Medicines Terminology (AMT) product concepts that may be used for the identification of a medicine, vaccine or other therapeutic good. This is suitable for the recording of a product which may be ordered for, administered to, or used by an individual.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10003"],
+      "sources" : ["1.2.36.1.2001.1004.201.10003"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement",
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/body-site-1",
+      "version" : "1.0.2",
+      "status" : "active",
+      "name" : "BodySite",
+      "title" : "Body Site",
+      "description" : "The Body Site value set includes values that cover a broad range of anatomical and acquired body structures suitable for identifying a body site.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10031"],
+      "sources" : ["1.2.36.1.2001.1004.201.10031"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1",
+      "version" : "1.0.2",
+      "status" : "active",
+      "name" : "ClinicalFinding",
+      "title" : "Clinical Finding",
+      "description" : "The Clinical Finding value set includes a broad range of values that support the recording of disorders and clinical findings, including observations, judgments or assessments about subjects of care.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10037"],
+      "sources" : ["1.2.36.1.2001.1004.201.10037"],
+      "uses" : {
+      },
+      "StructureDefinition-HICondition.html" : "HICondition",
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ClinicalSpecialty",
+      "title" : "Clinical Specialty",
+      "description" : "The Clinical Specialty value set includes values that may be used to describe a clinical specialty performed by an entity.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10186"],
+      "sources" : ["1.2.36.1.2001.1004.201.10186"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitionerRole.html" : "HIPractitionerRole"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2",
+      "version" : "2.2.1",
+      "status" : "active",
+      "name" : "CommonLanguagesInAustralia",
+      "title" : "Common Languages in Australia",
+      "description" : "The Common Languages in Australia value set includes languages that are commonly encountered in Australia, including a comprehensive set of Australian Indigenous languages.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["1.2.36.1.2001.1004.201.10069"],
+      "sources" : ["1.2.36.1.2001.1004.201.10069"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitioner.html" : "HIPractitioner",
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ContactRelationshipType",
+      "title" : "Contact Relationship Type",
+      "description" : "The Contact Relationship Type value set includes values that may be used to describe the nature of the relationship between the subject and the contact person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.2.36.1.2001.1004.201.10187"],
+      "sources" : ["1.2.36.1.2001.1004.201.10187"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPatient.html" : "HIPatient"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "HealthcareOrganisationRoleType",
+      "title" : "Healthcare Organisation Role Type",
+      "description" : "The Healthcare Organisation Role Type value set includes values that can represent the role, use or function of a healthcare related organisation or facility.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10112"],
+      "sources" : ["1.2.36.1.2001.1004.201.10112"],
+      "uses" : {
+      },
+      "StructureDefinition-HIOrganisation.html" : "HIOrganisation"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "IndicatorOfHypersensitivityOrIntoleranceToSubstance",
+      "title" : "Indicator of Hypersensitivity or Intolerance to Substance",
+      "description" : "The Indicator of Hypersensitivity or Intolerance to Substance value set includes values that may be used to indicate or state a propensity to adverse reaction to a substance. The values represent a range of concept types such as substances, medicines, clinical findings and negated allergy findings.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10087"],
+      "sources" : ["1.2.36.1.2001.1004.201.10087"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "MedicationReasonTaken",
+      "title" : "Medication Reason Taken",
+      "description" : "The Medication Reason Taken value set includes values that identify a reason why a medication has been or is being taken.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10048"],
+      "sources" : ["1.2.36.1.2001.1004.201.10048"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationStatement.html" : "HIMedicationStatement"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/medicine-substitution-reason-1",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicineSubstitutionReason",
+      "title" : "Medicine Substitution Reason",
+      "description" : "The Medicine Substitution Reason value set includes values that may be used to record the reason for medicine substitution.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10067"],
+      "sources" : ["1.2.36.1.2001.1004.201.10067"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/practitioner-role-1",
+      "version" : "1.0.2",
+      "status" : "active",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner Role",
+      "description" : "The Practitioner Role value set includes values that describe the role that a practitioner is authorised to perform within an organisation.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10028"],
+      "sources" : ["1.2.36.1.2001.1004.201.10028"],
+      "uses" : {
+      },
+      "StructureDefinition-HIPractitionerRole.html" : "HIPractitionerRole"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ReasonForRequest",
+      "title" : "Reason for Request",
+      "description" : "The Reason for Request value set includes values that can be used to indicate the rationale for a request. For example, this may include the reason for requesting a service or diagnostic procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10078"],
+      "sources" : ["1.2.36.1.2001.1004.201.10078"],
+      "uses" : {
+      },
+      "StructureDefinition-HIMedicationRequest.html" : "HIMedicationRequest"
+    },
+    {
+      "url" : "https://healthterminologies.gov.au/fhir/ValueSet/route-of-administration-1",
+      "version" : "1.0.2",
+      "status" : "active",
+      "name" : "RouteOfAdministration",
+      "title" : "Route of Administration",
+      "description" : "The Route of Administration value set includes values that describe the route by which a medicine may be administered.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.2.36.1.2001.1004.201.10041"],
+      "sources" : ["1.2.36.1.2001.1004.201.10041"],
+      "uses" : {
+      },
+      "StructureDefinition-HIAllergy.html" : "HIAllergy"
+    }
+  ]
+}

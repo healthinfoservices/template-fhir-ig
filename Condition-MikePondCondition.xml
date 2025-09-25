@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="MikePondCondition"/>
+  <meta>
+    <profile value="https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HICondition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition MikePondCondition</b></p><a name="MikePondCondition"> </a><a name="hcMikePondCondition"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-HICondition.html">HICondition</a></p></div><p><b>identifier</b>: HI1000123</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 6736007}">Moderate severity</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 195528001}">Acute rheumatic fever</span></p><p><b>subject</b>: <a href="Patient-MikePondPatient.html">Mike Pond  Male, DoB: 1960-01-25 ( National unique individual identifier (use: official, ))</a></p><p><b>onset</b>: 1995-02-02</p><p><b>recordedDate</b>: 2023-01-30</p><p><b>recorder</b>: <a href="Practitioner-DoctorPayne.html">Practitioner Jane Payne </a></p><p><b>asserter</b>: <a href="Practitioner-DoctorPayne.html">Practitioner Jane Payne </a></p></div>
+  </text>
+  <identifier>
+    <value value="HI1000123"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="6736007"/>
+      <display value="Moderate severity"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="195528001"/>
+      <display value="Acute rheumatic fever"/>
+    </coding>
+    <text value="Acute rheumatic fever"/>
+  </code>
+  <subject>
+    <reference value="Patient/MikePondPatient"/>
+  </subject>
+  <onsetDateTime value="1995-02-02"/>
+  <recordedDate value="2023-01-30"/>
+  <recorder>
+    <reference value="Practitioner/DoctorPayne"/>
+  </recorder>
+  <asserter>
+    <reference value="Practitioner/DoctorPayne"/>
+  </asserter>
+</Condition>

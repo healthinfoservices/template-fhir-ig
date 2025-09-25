@@ -1,0 +1,93 @@
+[
+  {
+    "id" : "template.fhir.ig",
+    "type" : "ImplementationGuide",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/ImplementationGuide/template.fhir.ig",
+    "version" : "0.0.2",
+    "name" : "TemplateFHIRIG"
+  },
+  {
+    "id" : "HIAllergy",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIAllergy",
+    "version" : "0.0.2",
+    "name" : "HIAllergy"
+  },
+  {
+    "id" : "HICarePlan",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HICarePlan",
+    "version" : "0.0.2",
+    "name" : "HICarePlan"
+  },
+  {
+    "id" : "HICondition",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HICondition",
+    "version" : "0.0.2",
+    "name" : "HICondition"
+  },
+  {
+    "id" : "HIMedicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIMedicationRequest",
+    "version" : "0.0.2",
+    "name" : "HIMedicationRequest"
+  },
+  {
+    "id" : "HIMedicationStatement",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIMedicationStatement",
+    "version" : "0.0.2",
+    "name" : "HIMedicationStatement"
+  },
+  {
+    "id" : "HIOrganisation",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIOrganisation",
+    "version" : "0.0.2",
+    "name" : "HIOrganisation"
+  },
+  {
+    "id" : "HIPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIPatient",
+    "version" : "0.0.2",
+    "name" : "HIPatient"
+  },
+  {
+    "id" : "HIPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIPractitioner",
+    "version" : "0.0.2",
+    "name" : "HIPractitioner"
+  },
+  {
+    "id" : "HIPractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/StructureDefinition/HIPractitionerRole",
+    "version" : "0.0.2",
+    "name" : "HIPractitionerRole"
+  },
+  {
+    "id" : "hi-diagnosis-vs",
+    "type" : "ValueSet",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-diagnosis-vs",
+    "version" : "0.0.2",
+    "name" : "HIDiagnosisCodeVS"
+  },
+  {
+    "id" : "hi-medication-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-medication-code-vs",
+    "version" : "0.0.2",
+    "name" : "HIMedicationCodeVS"
+  },
+  {
+    "id" : "hi-severity-vs",
+    "type" : "ValueSet",
+    "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-severity-vs",
+    "version" : "0.0.2",
+    "name" : "HISeverityVS"
+  }
+]

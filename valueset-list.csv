@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-diagnosis-vs,0.0.2,draft,,HIDiagnosisCodeVS,Acute Rheumatic Fever and Rheumatic Heart Disease Conditions,"Acute Rheumatic Fever and Rheumatic Heart Disease Conditions",,"SCT"
+https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-medication-code-vs,0.0.2,draft,,HIMedicationCodeVS,Medication Codes for Acute Rheumatic Fever,"Medication Codes for Acute Rheumatic Fever",,"SCT"
+https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-severity-vs,0.0.2,draft,,HISeverityVS,Acute Rheumatic Fever Condition Severity,"Acute Rheumatic Fever Condition Severity",,"SCT"

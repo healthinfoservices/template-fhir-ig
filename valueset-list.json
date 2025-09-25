@@ -1,0 +1,31 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-diagnosis-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HIDiagnosisCodeVS",
+      "title" : "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions",
+      "description" : "Acute Rheumatic Fever and Rheumatic Heart Disease Conditions",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-medication-code-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HIMedicationCodeVS",
+      "title" : "Medication Codes for Acute Rheumatic Fever",
+      "description" : "Medication Codes for Acute Rheumatic Fever",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://healthinfoservices.site/template-fhir-ig/ValueSet/hi-severity-vs",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "HISeverityVS",
+      "title" : "Acute Rheumatic Fever Condition Severity",
+      "description" : "Acute Rheumatic Fever Condition Severity",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}
